@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles.css" rel="stylesheet">
+	<meta charset="ISO-8859-1">
+	<title>TableSorter</title>
+</head>
+<body>
+
+	<header class = "navbar-container">
+		<nav  class = "nav-bar">
+		  <a href="index.html">
+		    <img src="images/UnSorted_1.png" alt="Logo" id="logo">
+		  </a>
+		  <a href = "endSession"><button class = "logout-btn">End Session</button></a>
+		</nav>
+	</header>
+	<section class = "formContainer">
+	    <h1>Sort the Table !</h1>
+		<form action="sortIt" method="post" class = "tableDetail">
+		  <label for="dataBase">Select a DataBase :</label>
+		  <select id="dataBase" name="dataBase" class = "selectors">
+		  <option value="GenericSort">GenericSort</option>
+		  </select>
+		  <br>
+		  
+		  <label for="table">Select a Table :</label>
+		  <select id="table" name="table" class = "selectors">
+		  <option value="unsorted">unsorted</option>
+		  </select>
+		  <br>
+		  
+		  <label for="column">Select a Column :</label>
+		  <select id="column" name="column" class = "selectors">
+		  <option value="column_a">column_a</option>
+		  <option value="column_b">column_b</option>
+		  <option value="column_c">column_c</option>
+		  <option value="column_d">column_d</option>
+		  <option value="column_e">column_e</option>
+		  </select>
+		  
+		  <input type="submit" value="Sort Column" class = "submit-btn">
+	   </form>
+   </section>
+</body>
+</html>
